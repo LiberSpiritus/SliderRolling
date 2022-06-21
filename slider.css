@@ -1,0 +1,27 @@
+ul li{list-style: none;}
+
+.slider ul {display: flex; justify-content: space-between;}
+.slider ul li {position:relative; background: url(./images/fb_icon01.jpg) no-repeat center center; background-size: cover; width:146px; height:146px; max-width:100%; max-height:100%; }
+.slider ul li:nth-of-type(2){background: url(./images/fb_icon02.jpg) no-repeat center center; background-size:cover;}
+.slider ul li:nth-of-type(3){background: url(./images/fb_icon03.jpg) no-repeat center center; background-size:cover;}
+.slider ul li:nth-of-type(4){background: url(./images/fb_icon04.jpg) no-repeat center center; background-size:cover;}
+.slider ul li:nth-of-type(5){background: url(./images/fb_icon05.jpg) no-repeat center center; background-size:cover;}
+.slider ul li:nth-of-type(6){background: url(./images/fb_icon06.jpg) no-repeat center center; background-size:cover;}
+.slider ul li:nth-of-type(7){background: url(./images/fb_icon07.jpg) no-repeat center center; background-size:cover;}
+.slider ul li:nth-of-type(8){background: url(./images/fb_icon08.jpg) no-repeat center center; background-size:cover;}
+.slider ul li:nth-of-type(9){background: url(./images/fb_icon09.jpg) no-repeat center center; background-size:cover;}
+
+.slider ul li::after {position:absolute; bottom:-30px; left:50%; transform:translateX(-50%); content:"무농약"; white-space: nowrap;}
+.slider ul li:nth-of-type(2)::after {content:"기획전";}
+.slider ul li:nth-of-type(3)::after {content:"베스트20";}
+.slider ul li:nth-of-type(4)::after {content:"회원혜택";}
+.slider ul li:nth-of-type(5)::after {content:"새벽배송";}
+.slider ul li:nth-of-type(6)::after {content:"리뷰이벤트";}
+.slider ul li:nth-of-type(7)::after {content:"우주초특가";}
+.slider ul li:nth-of-type(8)::after {content:"구독꾸러미";}
+.slider ul li:nth-of-type(9)::after {content:"신상품";}
+
+@media (max-width:768px){
+    .slider ul li:nth-of-type(1n) {width: 80px !important; background-size: contain;}
+    .slider ul li::after {font-size:0.5rem; bottom:20px;}
+}
